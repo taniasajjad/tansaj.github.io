@@ -1,39 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tan Saj | DevOps Engineer</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tan Saj Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- AOS Animation -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <style>
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Tan Saj</h1>
-        <p class="subtitle">DevOps Engineer | CI/CD • Azure • Power BI</p>
-        <a href="tan_saj_placeholder_resume.pdf" class="btn" download>Download Resume</a>
+
+    <!-- Header with Parallax effect -->
+    <header class="header-parallax">
+        <h1>Welcome to My Portfolio</h1>
+        <p>DevOps Engineer | Cloud Enthusiast | Automation Specialist</p>
     </header>
 
-    <section class="about">
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about" data-aos="fade-up">
         <h2>About Me</h2>
-        <p>I’m a DevOps Engineer with a passion for building efficient CI/CD pipelines, working with AKS, GitHub Actions, and automating cloud deployments. I’m also experienced with Power BI, SQL, and data storytelling.</p>
+        <p>Hello! I'm Tan Saj, a passionate DevOps engineer with a strong background in automation, cloud infrastructure, and CI/CD pipelines. I love solving complex problems and driving automation at scale. My mission is to help businesses achieve operational excellence with technology.</p>
     </section>
 
-    <section class="skills">
+    <!-- Skills Section -->
+    <section id="skills" data-aos="fade-left">
         <h2>Skills</h2>
         <ul>
-            <li>Azure DevOps</li>
-            <li>GitHub Actions</li>
-            <li>PowerShell & Python</li>
-            <li>AKS / Kubernetes</li>
-            <li>SQL & Power BI</li>
+            <li>DevOps & Cloud Engineering</li>
+            <li>Azure DevOps & CI/CD</li>
+            <li>Automation (Terraform, Ansible)</li>
+            <li>Containerization (Docker, Kubernetes)</li>
+            <li>Version Control (Git, GitHub)</li>
         </ul>
     </section>
 
+    <!-- Projects Section -->
+    <section id="projects" data-aos="fade-up">
+        <h2>Projects</h2>
+        <div class="project-gallery">
+            <div class="project-item">
+                <img src="project1.jpg" alt="Project 1">
+                <div class="overlay">
+                    <p>Project 1 Description: DevOps Automation Pipeline</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project2.jpg" alt="Project 2">
+                <div class="overlay">
+                    <p>Project 2 Description: Kubernetes Deployment</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" data-aos="fade-up">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out via email: <a href="mailto:tan.saj@example.com">tan.saj@example.com</a></p>
+    </section>
+
+    <!-- Footer -->
     <footer>
-        <p>Connect: 
-            <a href="https://github.com/tansaj" target="_blank">GitHub</a> | 
-            <a href="https://linkedin.com/in/tansaj" target="_blank">LinkedIn</a>
-        </p>
+        <p>&copy; 2025 Tan Saj - All rights reserved</p>
     </footer>
+
+    <!-- AOS Animation -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
