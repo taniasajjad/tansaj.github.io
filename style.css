@@ -8,17 +8,17 @@
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f4f4f4;
+    background-color: #121212;
+    color: #e0e0e0;
 }
 
 h1, h2 {
-    color: #0a9396;
+    color: #80cbc4;
 }
 
 /* Header (Parallax Effect) */
 .header-parallax {
-    background: url('your-image.jpg') no-repeat center center fixed; /* Replace with your image */
+    background: url('your-image.jpg') no-repeat center center fixed;
     background-size: cover;
     height: 300px;
     text-align: center;
@@ -33,6 +33,7 @@ h1, h2 {
 .header-parallax h1 {
     font-size: 3rem;
     margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
 }
 
 .header-parallax p {
@@ -58,32 +59,35 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #e0e0e0;
     text-decoration: none;
     font-size: 1.2rem;
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    color: #0a9396;
+    color: #80cbc4;
 }
 
 /* Sections */
 section {
     padding: 50px 20px;
     margin: 40px 20px;
-    background-color: white;
+    background-color: #1f1f1f;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    animation: slideIn 1s ease-out;
 }
 
 h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
+    animation: zoomIn 1s ease-out;
 }
 
 p {
     font-size: 1.2rem;
+    color: #b0b0b0;
 }
 
 /* Skills List */
@@ -100,7 +104,7 @@ ul li {
 
 ul li:before {
     content: "✔";
-    color: #0a9396;
+    color: #80cbc4;
     position: absolute;
     left: 0;
     font-size: 1.5rem;
@@ -120,7 +124,8 @@ ul li:before {
     width: 30%;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
 }
 
 .project-item img {
@@ -131,7 +136,7 @@ ul li:before {
 }
 
 .project-item:hover img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .overlay {
@@ -140,7 +145,7 @@ ul li:before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     color: white;
     display: flex;
     justify-content: center;
@@ -162,7 +167,7 @@ ul li:before {
 /* Contact Section */
 #contact p {
     font-size: 1.2rem;
-    color: #333;
+    color: #e0e0e0;
 }
 
 /* Footer */
@@ -174,7 +179,7 @@ footer {
     font-size: 1rem;
 }
 
-/* Animation settings */
+/* AOS Animations */
 [data-aos="fade-up"] {
     opacity: 0;
     transform: translateY(50px);
@@ -197,10 +202,38 @@ footer {
     transform: translateX(0);
 }
 
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
 /* Button hover effect */
 a:hover {
     transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease;
 }
 
@@ -229,4 +262,3 @@ html {
         font-size: 1.2rem;
     }
 }
-
