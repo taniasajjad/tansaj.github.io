@@ -6,113 +6,131 @@
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
     background-color: #121212;
     color: #e0e0e0;
+    line-height: 1.6;
 }
 
-h1, h2 {
-    color: #80cbc4;
+h1, h2, h3, p {
+    color: #e0e0e0;
 }
 
-/* Header (Parallax Effect) */
-.header-parallax {
-    background: url('your-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: 300px;
-    text-align: center;
-    color: white;
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Header Section */
+#header {
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    flex-direction: column;
     align-items: center;
-    padding: 50px;
-}
-
-.header-parallax h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.header-parallax p {
-    font-size: 1.5rem;
-}
-
-/* Navigation Bar */
-nav {
-    background-color: #333;
-    padding: 1rem;
     text-align: center;
+    color: white;
+    padding: 0 20px;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
-    color: #e0e0e0;
-    text-decoration: none;
-    font-size: 1.2rem;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
+.hero span {
     color: #80cbc4;
 }
 
-/* Sections */
-section {
-    padding: 50px 20px;
-    margin: 40px 20px;
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    animation: slideIn 1s ease-out;
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-h2 {
-    font-size: 2.5rem;
-    margin-bottom: 20px;
-    animation: zoomIn 1s ease-out;
-}
-
-p {
+.hero .btn {
+    padding: 12px 30px;
+    background-color: #80cbc4;
+    border-radius: 30px;
+    color: white;
     font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #66b2a7;
+}
+
+/* About Section */
+#about {
+    padding: 80px 20px;
+    background-color: #1f1f1f;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    text-align: center;
     color: #b0b0b0;
 }
 
-/* Skills List */
-ul {
-    list-style-type: none;
+/* Skills Section */
+#skills {
+    padding: 60px 20px;
 }
 
-ul li {
-    margin-bottom: 15px;
-    font-size: 1.2rem;
-    padding-left: 20px;
-    position: relative;
+#skills h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-ul li:before {
-    content: "✔";
-    color: #80cbc4;
-    position: absolute;
-    left: 0;
+.skills-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.skill-card {
+    width: 30%;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: scale(1.05);
+}
+
+.skill-card h3 {
     font-size: 1.5rem;
-    top: 0;
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    font-size: 1.2rem;
 }
 
 /* Projects Section */
-.project-gallery {
+#projects {
+    padding: 80px 20px;
+    background-color: #1f1f1f;
+}
+
+#projects h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.projects-gallery {
     display: flex;
     gap: 20px;
     justify-content: space-between;
@@ -121,22 +139,21 @@ ul li:before {
 
 .project-item {
     position: relative;
-    width: 30%;
+    width: 45%;
+    margin-bottom: 20px;
     overflow: hidden;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .project-item img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease-in-out;
-    border-radius: 10px;
+    transition: transform 0.3s ease;
 }
 
 .project-item:hover img {
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .overlay {
@@ -165,100 +182,44 @@ ul li:before {
 }
 
 /* Contact Section */
+#contact {
+    padding: 80px 20px;
+    background-color: #333;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
 #contact p {
     font-size: 1.2rem;
-    color: #e0e0e0;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #b0b0b0;
+}
+
+#contact .btn {
+    padding: 12px 30px;
+    background-color: #80cbc4;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #1f1f1f;
     text-align: center;
     padding: 20px;
+    color: #b0b0b0;
     font-size: 1rem;
 }
 
-/* AOS Animations */
-[data-aos="fade-up"] {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: all 1s ease;
-}
-
-[data-aos="fade-up"].aos-animate {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-[data-aos="fade-left"] {
-    opacity: 0;
-    transform: translateX(-50px);
-    transition: all 1s ease;
-}
-
-[data-aos="fade-left"].aos-animate {
-    opacity: 1;
-    transform: translateX(0);
-}
-
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes slideIn {
-    from {
-        transform: translateY(100px);
-    }
-    to {
-        transform: translateY(0);
-    }
-}
-
-@keyframes zoomIn {
-    from {
-        transform: scale(0.8);
-    }
-    to {
-        transform: scale(1);
-    }
-}
-
-/* Button hover effect */
-a:hover {
-    transform: scale(1.1);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s ease;
-}
-
-/* Smooth scroll */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .project-gallery {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .project-item {
-        width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .header-parallax h1 {
-        font-size: 2.5rem;
-    }
-
-    .header-parallax p {
-        font-size: 1.2rem;
-    }
+footer p {
+    margin: 0;
 }
