@@ -3,87 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tan Saj Portfolio</title>
+    <title>Your Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <!-- AOS Animation -->
-    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
-    <style>
-        /* Smooth scroll for navigation */
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
-
-    <!-- Header with Parallax effect -->
-    <header class="header-parallax">
-        <h1>Welcome to My Portfolio</h1>
-        <p>DevOps Engineer | Cloud Enthusiast | Automation Specialist</p>
+    <header id="header">
+        <div class="container">
+            <div class="hero">
+                <h1>Hello, I'm <span>Your Name</span></h1>
+                <p>DevOps Engineer | Web Developer | Open Source Enthusiast</p>
+                <a href="#contact" class="btn">Get in Touch</a>
+            </div>
+        </div>
     </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- About Me Section -->
-    <section id="about" data-aos="fade-up">
-        <h2>About Me</h2>
-        <p>Hello! I'm Tan Saj, a passionate DevOps engineer with a strong background in automation, cloud infrastructure, and CI/CD pipelines. I love solving complex problems and driving automation at scale. My mission is to help businesses achieve operational excellence with technology.</p>
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am a passionate DevOps engineer with a strong background in cloud computing, automation, and continuous integration/continuous delivery (CI/CD). My goal is to make software deployment faster, easier, and more reliable.</p>
+        </div>
     </section>
 
-    <!-- Skills Section -->
-    <section id="skills" data-aos="fade-left">
-        <h2>Skills</h2>
-        <ul>
-            <li>DevOps & Cloud Engineering</li>
-            <li>Azure DevOps & CI/CD</li>
-            <li>Automation (Terraform, Ansible)</li>
-            <li>Containerization (Docker, Kubernetes)</li>
-            <li>Version Control (Git, GitHub)</li>
-        </ul>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" data-aos="fade-up">
-        <h2>Projects</h2>
-        <div class="project-gallery">
-            <div class="project-item">
-                <img src="project1.jpg" alt="Project 1">
-                <div class="overlay">
-                    <p>Project 1 Description: DevOps Automation Pipeline</p>
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill-card">
+                    <h3>DevOps</h3>
+                    <p>CI/CD, Automation, Jenkins, Docker, Kubernetes</p>
                 </div>
-            </div>
-            <div class="project-item">
-                <img src="project2.jpg" alt="Project 2">
-                <div class="overlay">
-                    <p>Project 2 Description: Kubernetes Deployment</p>
+                <div class="skill-card">
+                    <h3>Cloud</h3>
+                    <p>AWS, Azure, GCP, Terraform</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>Python, Java, Bash, PowerShell</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" data-aos="fade-up">
-        <h2>Contact</h2>
-        <p>If you'd like to get in touch, feel free to reach out via email: <a href="mailto:tan.saj@example.com">tan.saj@example.com</a></p>
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-gallery">
+                <div class="project-item">
+                    <img src="project1.jpg" alt="Project 1">
+                    <div class="overlay">
+                        <p>Project 1: CI/CD Pipeline Automation</p>
+                    </div>
+                </div>
+                <div class="project-item">
+                    <img src="project2.jpg" alt="Project 2">
+                    <div class="overlay">
+                        <p>Project 2: Cloud Infrastructure as Code</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Tan Saj - All rights reserved</p>
-    </footer>
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <p>If you'd like to collaborate or have any questions, feel free to get in touch!</p>
+            <a href="mailto:your.email@example.com" class="btn">Send Email</a>
+        </div>
+    </section>
 
-    <!-- AOS Animation -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
+    <footer>
+        <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
 </body>
 </html>
